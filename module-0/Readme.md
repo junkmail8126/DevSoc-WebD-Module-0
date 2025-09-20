@@ -56,7 +56,7 @@ Now let’s get the project files from GitHub.
 2. Right-click inside the folder and choose Open in Terminal (or open VS Code → Terminal → New Terminal)
 3. Run:
     ```bash
-    git clone https://github.com/devsoc/module-0.git
+    git clone https://github.com/saisridhar77/DevSoc-WebD-Module-0.git
 4. After cloning, open the folder in VS Code:
     File → Open Folder → Select the cloned folder
 
@@ -85,4 +85,5 @@ You now have all the module files on your machine 🎯
 Welcome to the DevSoc family.
 
 Happy coding and see you in the next module! 💻✨
+
 
