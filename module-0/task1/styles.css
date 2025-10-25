@@ -1,0 +1,52 @@
+/* General page setup */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 20px;
+    font-family: sans-serif;
+}
+
+/* Gallery container layout */
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    max-width: 1200px; /* Limits the overall width */
+}
+
+/* Card container for establishing 3D space */
+.card {
+    width: 200px;
+    height: 200px;
+    /* Sets the depth (perspective) for the 3D effect */
+    perspective: 1000px; 
+}
+
+/* Image styling and 3D properties */
+.card img {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    object-fit: cover;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    
+    /* Crucial: Tells the browser to render children in 3D space */
+    transform-style: preserve-3d; 
+    
+    /* Makes the flip smooth */
+    transition: transform 0.6s; 
+    
+    /* Hides the back of the element when it rotates 180deg */
+    backface-visibility: hidden;
+}
+
+/* The actual 3D FLIP effect on hover */
+.card:hover img {
+    /* Rotates the image 180 degrees around the Y-axis (vertical flip) */
+    transform: rotateY(180deg);
+}
